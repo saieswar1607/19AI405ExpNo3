@@ -1,8 +1,9 @@
-<h1>ExpNo 3 : Implement Breadth First Search Traversal of a Graph</h1> 
+# ExpNo 3 : Implement Breadth First Search Traversal of a Graph
 
-<H3>Aim:</H3>
+### Aim:
 <p>To Implement Breadth First Search Traversal of a Graph using Python 3.</p>
-<h3>Theory:</h3>
+
+### Theory:
 <p>Breadth-First Traversal (or Search) for a graph is like the Breadth-First Traversal of a tree.
 The only catch here is that, unlike trees, graphs may contain cycles so that we may come to the same node again. To avoid processing a node more than once, we divide the vertices into two categories:
 <ol><li>Visited</li>
@@ -53,19 +54,15 @@ Remove node 4 from the front of queue and visit the unvisited neighbours and pus
 Now, Queue becomes empty, So, terminate these process of iteration.
 
 
-<hr>
-<h2>Algorithm:</h2>
-<hr>
+### Algorithm:
 <ol>
   <li>Construct a Graph with Nodes and Edges</li>
- <li>Breadth First Uses Queue and iterates through the Queue for Traversal.</li>
+  <li>Breadth First Uses Queue and iterates through the Queue for Traversal.</li>
   <li>Insert a Start Node into the Queue.</li>
-<li>Find its Successors Or neighbors and Check whether the node is visited or not.</li>
-<li>If Not Visited, add it to the Queue. Else Continue.</li>
-<li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
-
+  <li>Find its Successors Or neighbors and Check whether the node is visited or not.</li>
+  <li>If Not Visited, add it to the Queue. Else Continue.</li>
+  <li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
 </ol>
-<hr>
 
 ### Program:
 ```
@@ -105,41 +102,37 @@ traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
 ```
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-7 9 <BR>
-A B <BR>
-A C <BR>
-A F <BR>
-C E <BR>
-C F <BR>
-C D <BR>
-D E <BR>
-D G <BR>
-G F <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
+### Sample Input
+```
+7 9 
+A B 
+A C 
+A F 
+C E 
+C F 
+C D 
+D E 
+D G 
+G F 
+```
+### Sample Output
+```
 ['A', 'B', 'C', 'F', 'E', 'D', 'G']
-
-<hr>
-
-<hr>
-<h3>Sample Input</h3>
-<hr>
-5 6 <BR>
-0 1 <BR>
-0 2 <BR>
-1 2 <BR>
-1 3 <BR>
-2 4 <BR>
-3 4 <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
+```
+### Sample Input
+```
+5 6 
+0 1 
+0 2 
+1 2 
+1 3 
+2 4 
+3 4 
+```
+### Sample Output
+```
 ['0', '1', '2', '3', '4']
-<hr>
-<h3>Result:</h3>
-<hr>
+```
+### Result:
+
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
